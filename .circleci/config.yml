@@ -11,4 +11,11 @@ workflows:
     jobs:
       - welcome/run
 test:
+  welcome:
+    jobs:
+      - test
+prod:
+  welcome:
+    jobs:
+      -prod
       
