@@ -10,12 +10,8 @@ workflows:
     # Run the welcome/run job in its own container
     jobs:
       - welcome/run
-test:
-  welcome:
-    jobs:
+      - hello
       - test
-prod:
-  welcome:
-    jobs:
-      -prod
+      - prod
+
       
